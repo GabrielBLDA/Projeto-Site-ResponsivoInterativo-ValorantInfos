@@ -1,0 +1,164 @@
+body {
+	background-color: #0c1824;
+}
+
+
+
+
+img#phantom {
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 140px;
+	border-top-right-radius: 140px;
+	border-top-left-radius: 20px;
+}
+
+img#vandal{
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 140px;
+	border-top-right-radius: 140px;
+	border-top-left-radius: 20px;
+}
+
+img#faca {
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 140px;
+	border-top-right-radius: 140px;
+	border-top-left-radius: 20px;
+}
+
+
+
+.bg-light {
+    background-color: #ff5152!important;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #0c1824;
+    border-color: #343a40;
+}
+  
+
+.cubo {
+	background: #1E2238;
+	width: 180px;
+	height: 180px;
+	border-radius: 30px;
+	box-shadow: inset 10px 12px  #0c1824
+
+}
+
+
+.sair{
+	float: center;	
+	color: white;
+	margin-left: 4px;
+	text-align: center;
+	font-size: 15px; 
+}
+
+.sair:hover{
+	
+	color: #ff5152;;
+	border-radius: 500px;
+
+	
+	
+}
+
+
+.bg-modal{
+	opacity: 0;
+	transition: opacity 1s;
+	background: #1E2238;
+	margin-top: 5px;
+	width: 180px;
+	height: 250px;
+	border-radius: 20px;
+	text-align: center;
+	color: white;
+	/*visibility: visible; visible /*hidden*/*/
+	}
+
+div span.botaoModal{
+	background: #ff5152;
+	color:white;
+	font-size: 18px;
+	border: none;
+	border-radius: 15px;
+
+}
+
+
+
+#legendas span.btn {
+	background: #1E2238;
+	color: white;
+	border: 3px solid #1D1B33;
+	border-radius: 15px;
+	margin-left: 147px;
+	padding: 12px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+
+@media (max-width: 575.98px) { 
+
+
+#legendas span.btn {
+	background: #1E2238;
+	color: white;
+	border: 3px solid #1D1B33;
+	border-radius: 15px;
+	margin-left: 202px;
+	padding: 12px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+
+
+@media (min-width: 390px) and (max-width: 844.98px) { 
+
+	#legendas span.btn {
+	background: #1E2238;
+	color: white;
+	border: 3px solid #1D1B33;
+	border-radius: 15px;
+	margin-left: 157px;
+	padding: 12px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+
+}
+	
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+	
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 923px) and (max-width: 1199.98px) { 
+	
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+		
+
+
+
+
+

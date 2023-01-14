@@ -26,6 +26,11 @@ function layoutAgentes() {
 
 }
 
+
+function aviso(){
+	alert('Ainda não programei este botão. Tente selecionar Outro!!!.')
+}
+
 //TESTE 1 FUNÇÃO
 // function layoutArmas() {
 // 	let recuperar = document.getElementById('armas')

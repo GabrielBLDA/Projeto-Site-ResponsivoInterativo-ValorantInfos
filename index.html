@@ -40,13 +40,10 @@
 								<a href="" class="nav-link">Home</a>
 							</li>
 							<li class="nav-item">
-								<a href="" class="nav-link">Mapa</a>
+								<a href="" class="nav-link">Mapas</a>
 							</li>
 							<li class="nav-item">
-								<a href="" class="nav-link">Magias</a>
-							</li>
-							<li class="navbar-item">
-								<a href="" class="nav-link">FAQ</a>
+								<a href="" class="nav-link">Passe</a>
 							</li>
 							<li class="nav-item ml-2">
 								<a href="" class="btn btn-dark ml-4">Logar</a>
@@ -59,87 +56,103 @@
 
 		<center>
 			<section id="home" class="mt-5">
-				<div class="container" > <!-- inicio container -->
-					<div class="row"> <!-- inicio row -->
-						<div class="col-md-4 mt-2">
+				<div class="container"> <!-- inicio container -->
+					<div class="row "> <!-- inicio row -->
+						<div class="col-md-6">
+							<div class="cuboPrincipal" >
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<img src="imagens/logo2.png" class="img-fluid mb-5" width="120">
+										</div>
+									</div>	
+									<div class="row">
+										<div class="col-md-12">
+											<span class="btn btn-primary btn-lg" onclick="layoutAgentes()">AGENTES</span>
+										</div>
+										<div class="col-md-12 mt-5">
+											<span class="btn btn-primary btn-lg" onclick="layoutArmas()">ARMAS</span>
+										</div>
+										<div class="col-md-12 mt-5">
+											<span class="btn btn-primary btn-lg">MAPAS</span>
+										</div>
+										<div class="col-md-12 mt-5">
+											<span class="btn btn-primary btn-lg">SKINS</span>
+										</div>
 
-							<div class="cubo">
-								<img src="imagens/vandal.png" class="img-fluid" id="vandal">
-							</div>
+									</div>	
+								</div>
+							</div>		
+						</div>
 
-							<div class="row">
-								<div id="legendas">
-									<span class="btn" id="btnVandal" onmouseover ="dispararModal()"> VANDAL</span>
+						<div class="col-md-6" style="border: 1px dashed #ff5152; border-radius: 50px;">
+							<div class="container" id="armas" style="display: none;">
+								<div class="row mt-5">
+									<div class="col-md-6">
+										<div class="cubo">
+											<img src="imagens/vandal.png" class="img-fluid" id="vandal">
+											<span class="btn btn-danger mt-3">VANDAL</span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="cubo">
+											<img src="imagens/phantom.png" class="img-fluid" id="phantom">
+											<span class="btn btn-danger mt-3">PHANTOM</span>
+										</div>
+									</div>
+								</div>
+								<div class="row mt-5">
+									<div class="col-md-6 mt-2">
+										<div class="cubo">
+											<img src="imagens/faca.png" class="img-fluid" id="faca">
+											<span class="btn btn-danger mt-3">FACAS</span>
+										</div>
+									</div>
+									<div class="col-md-6 mt-2">
+										<div class="cubo">
+											<img src="imagens/operator.png" class="img-fluid" id="faca">
+											<span class="btn btn-danger mt-4">OPERATOR</span>
+										</div>
+									</div>
 								</div>
 							</div>
 
-							<div class="row">
-								<div class="col">
-									<div class="bg-modal" id="modal">
-										<span class=" col-md-8 mt-1 sair btn" onclick="fechar()">X</span>
-										<span class="col-md-8  btn btn-light btn-lg mt-4 botaoModal"> SOBRE</span>
-										<span class=" col-md-8 btn btn-light btn-lg mt-4 botaoModal"> DICAS</span>
-										<span class="col-md-8  btn btn-light btn-lg mt-4 botaoModal"> SKINS</span>
+							<div class="container" id="agentes" style="display: none;">
+								<div class="row mt-5">
+									<div class="col-md-6">
+										<div class="cubo">
+											<img src="imagens/sage.png" class="img-fluid" id="vandal">
+											<span class="btn btn-danger mt-1 ">SAGE</span>
+										</div>
 									</div>
-								</div>	
+									<div class="col-md-6">
+										<div class="cubo">
+											<img src="imagens/phoenix.png" class="img-fluid" id="phantom">
+											<span class="btn btn-danger mt-1">PHOENIX</span>
+										</div>
+									</div>
+								</div>
+								<div class="row mt-5">
+									<div class="col-md-6 mt-2">
+										<div class="cubo">
+											<img src="imagens/reyna.png" class="img-fluid" id="faca">
+											<span class="btn btn-danger mt-1">REYNA</span>
+										</div>
+									</div>
+									<div class="col-md-6 mt-2">
+										<div class="cubo">
+											<img src="imagens/fade.png" class="img-fluid" id="faca">
+											<span class="btn btn-danger mt-1">FADE</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 
-						<div class="col-md-4 mt-2">
-
-							<div class="cubo">
-									<img src="imagens/faca.png" class="img-fluid" id="faca">		
-							</div>
-
-							<div class="row">
-								<div id="legendas">
-									<span class="btn" onmouseover ="dispararModal2()"> FACAS</span>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col">
-									<div class="bg-modal" id="modal2">
-										<span class=" col-md-8 mt-1 sair btn" onclick="fechar2()">X</span>
-										<span class="col-md-8  btn btn-light btn-lg mt-4 botaoModal"> SOBRE</span>
-										<span class=" col-md-8 btn btn-light btn-lg mt-4 botaoModal"> DICAS</span>
-										<span class="col-md-8 col-sm btn btn-light btn-lg mt-4 botaoModal"> SKINS</span>
-									</div>
-								</div>	
-							</div>
-
-						</div>	
-
-						<div class="col-md-4 mt-2">
-							
-							<div class="cubo">
-								<img src="imagens/phantom.png" class="img-fluid" id="phantom">
-							</div>
-
-							<div class="row">
-								<div id="legendas">
-									<span type="button" class="btn" onmouseover ="dispararModal3()"> PHANTOM</span>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col">
-									<div class="bg-modal" id="modal3">
-										<span class=" col-md-8 col-sm-1 mt-1 sair btn" onclick="fechar3()">X</span>
-										<span class="col-md-8  btn btn-light btn-lg mt-4 botaoModal"> SOBRE</span>
-										<span class=" col-md-8 btn btn-light btn-lg mt-4 botaoModal"> DICAS</span>
-										<span class="col-md-8  btn btn-light btn-lg mt-4 botaoModal"> SKINS</span>
-									</div>
-								</div>	
-							</div>
-
-						</div>
-
-					</div> <!-- Final row -->											
-					
+					</div> <!-- Final row -->							
 				</div> <!-- Final container -->
 			</section>
-		</center>
+		</center> 
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

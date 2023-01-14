@@ -1,5 +1,5 @@
 body {
-	background-color: #0c1824;
+	background: url(../imagens/fundo.png);
 }
 
 
@@ -27,6 +27,14 @@ img#faca {
 }
 
 
+.cuboPrincipal{
+	width: 350px;
+	height: 550px;
+	background: #1E2238;
+	border-radius: 50px;
+	border-bottom: 2px solid #ff5152;
+}
+
 
 .bg-light {
     background-color: #ff5152!important;
@@ -37,15 +45,31 @@ img#faca {
     background-color: #0c1824;
     border-color: #343a40;
 }
-  
+
+.btn-primary {
+    color: #fff;
+    background-color: #0c1824;
+    border: 1px dashed #ff5152;
+} 
+.btn-primary:hover{
+ 	color: #fff;
+    background-color: #ff5152;
+    border: 1px dashed black;
+}
 
 .cubo {
 	background: #1E2238;
 	width: 180px;
 	height: 180px;
 	border-radius: 30px;
-	box-shadow: inset 10px 12px  #0c1824
+	box-shadow: inset 10px 12px  #0c1824;
+}
 
+.cubo2 {
+	background: #1E2238;
+	width: 180px;
+	height: 180px;
+	border-radius: 30px;
 }
 
 
@@ -59,26 +83,9 @@ img#faca {
 
 .sair:hover{
 	
-	color: #ff5152;;
-	border-radius: 500px;
-
-	
-	
+	color: #ff5152;
+	border-radius: 500px;	
 }
-
-
-.bg-modal{
-	opacity: 0;
-	transition: opacity 1s;
-	background: #1E2238;
-	margin-top: 5px;
-	width: 180px;
-	height: 250px;
-	border-radius: 20px;
-	text-align: center;
-	color: white;
-	/*visibility: visible; visible /*hidden*/*/
-	}
 
 div span.botaoModal{
 	background: #ff5152;
@@ -91,46 +98,18 @@ div span.botaoModal{
 
 
 
-#legendas span.btn {
-	background: #1E2238;
-	color: white;
-	border: 3px solid #1D1B33;
-	border-radius: 15px;
-	margin-left: 147px;
-	padding: 12px;
-	text-align: center;
-	margin-top: -20px;
-}
+
 
 
 @media (max-width: 575.98px) { 
 
 
-#legendas span.btn {
-	background: #1E2238;
-	color: white;
-	border: 3px solid #1D1B33;
-	border-radius: 15px;
-	margin-left: 202px;
-	padding: 12px;
-	text-align: center;
-	margin-top: -20px;
+
+
 }
-
-
-
 @media (min-width: 390px) and (max-width: 844.98px) { 
 
-	#legendas span.btn {
-	background: #1E2238;
-	color: white;
-	border: 3px solid #1D1B33;
-	border-radius: 15px;
-	margin-left: 157px;
-	padding: 12px;
-	text-align: center;
-	margin-top: -20px;
-}
+
 
 }
 

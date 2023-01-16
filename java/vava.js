@@ -2,12 +2,13 @@ function layoutArmas() {
 	let recuperar = document.getElementById('armas')
 	let testar = document.getElementById('agentes')
 
-	if (testar.style.display === "contents") {
+	// if (testar.style.display === "contents") {
 		testar.style.display = "none";
 		recuperar.style.display = "contents"
-	} else {
-		recuperar.style.display = "contents"
-	}	
+		
+	// } else {
+	// 	recuperar.style.display = "contents"
+	// }	
 }
 
 
@@ -17,12 +18,12 @@ function layoutAgentes() {
 	let testar = document.getElementById('armas')
 
 
-	if (testar.style.display === "contents") {
+	// if (testar.style.display === "contents") {
 		testar.style.display = "none";
 		recuperar.style.display = "contents"
-	} else {
-		recuperar.style.display = "contents"
-	}
+	// } else {
+	// 	recuperar.style.display = "contents"
+	// }
 
 }
 

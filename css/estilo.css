@@ -3,10 +3,21 @@ body {
 }
 
 h1{
-	margin-left: 25%;
-	margin-top: 15px;
+	margin-top: 10px;
+	font-size: 28px;
 }
 
+section span#ult a{
+	text-decoration: none;
+	text-indent: none;
+	color: none;
+}
+
+
+h1#tituloRaze{
+	margin-left: 30%;
+	font-size: 35px;
+}
 
 img#phantom {
 	border-bottom-right-radius: 40px;
@@ -31,11 +42,17 @@ img#faca {
 
 .caixa-Skills{
 	width: 490px;
-	height: 350px;
+	height: 330px;
 	border-radius: 35px;
-	 border: 1px dashed #ff5152;
+	border: 1px dashed #ff5152;
 }
 
+.conteudo-Skill{
+	color: white;
+	font-size: 16px;
+	padding: 15px;
+	text-align: center;
+}
 
 .lado{
 	float: right;
@@ -123,6 +140,11 @@ section#raze span {
 	box-shadow: 0px -3px 0px #ff4b00;
 }
 
+section#raze span:hover {
+	color: black;
+	background:   #ff5152;
+	box-shadow: 0px 3px 0px #ffffff;
+}
 
 
 
@@ -130,24 +152,27 @@ section#raze span {
 
 
 
-
 }
 @media (min-width: 390px) and (max-width: 844.98px) { 
 
 
+
 h1{
-	margin-left: 20%;
-	margin-top: 15px;
+	text-align: center;
 }
 
 .caixa-Skills{
-	width: 335px;
-	height: 600px;
+	width: 345px;
+	height: 360px;
 	border-radius: 35px;
-	 border: 1px dashed #ff5152;
+	border: 1px dashed #ff5152;
+	text-align: center;
 }
 
-
+h1#tituloRaze{
+	margin-left: 3%;
+	font-size: 35px;
+}
 
 section#raze span {
 	color: black;

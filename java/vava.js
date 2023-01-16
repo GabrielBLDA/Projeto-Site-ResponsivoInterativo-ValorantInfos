@@ -1,3 +1,8 @@
+
+
+
+
+
 function layoutArmas() {
 	let recuperar = document.getElementById('armas')
 	let testar = document.getElementById('agentes')
@@ -34,8 +39,19 @@ function aviso(){
 
 
 
-//função skills campeao
+function agente(x){
 
+	if (x === 'raze') {
+		let recuperar = document.getElementById('raze');
+
+		recuperar.style.display = "contents";
+		recuperar.style.margin = "500px 1000px 2000px 3000px";
+		
+	}
+}
+
+
+//função skills campeao
 function legendaSkill(value){
 	
 	if (value === 'q') {
@@ -90,6 +106,9 @@ function legendaSkill(value){
 		esconderC.style.display = "none"
 	}  	
 }
+
+
+ alert('!!!Atualização!!! Foi inserido o Layout do Agente: Raze. Seguindo as opções:  Agentes>Raze.')
 
 
 

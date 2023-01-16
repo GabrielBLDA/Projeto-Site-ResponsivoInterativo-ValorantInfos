@@ -119,12 +119,28 @@ img#faca {
 	border-radius: 500px;	
 }
 
+
 div span.botaoModal{
 	background: #ff5152;
 	color:white;
 	font-size: 18px;
 	border: none;
 	border-radius: 15px;
+}
+
+section#raze span#remover{
+	color: black;
+	background: white;
+	display: block;
+	width: 35px;
+	padding: 5px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	box-shadow: 0px -3px 0px #ff4b00;
+	opacity: x
+
 }
 
 section#raze span {

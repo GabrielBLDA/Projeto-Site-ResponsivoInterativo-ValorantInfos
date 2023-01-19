@@ -13,7 +13,6 @@ function layoutArmas() {
 }
 
 
-
 function layoutAgentes() {
 	let recuperar = document.getElementById('agentes')
 	let testar = document.getElementById('armas')
@@ -31,7 +30,6 @@ function layoutAgentes() {
 function aviso(){
 	alert('Ainda não programei este botão. Tente selecionar Outro!!!.')
 }
-
 
 
 
@@ -84,19 +82,20 @@ function agente(x){
 //função skills campeao
 function legendaSkill(value){
 
-	
-	
 	if (value === 'q') {
 
-		let marcarBotao = document.getElementById('botaoQ')
-		marcarBotao.className += " marcarBotao"
-		
+		let marcarBotaoRaze = document.getElementById('botaoQ')
+		marcarBotaoRaze.className += " marcarBotao"
+		let marcarBotaoSage = document.getElementById('botaoQ2')
+		marcarBotaoSage.className += " marcarBotao"
+		let marcarBotaoReyna = document.getElementById('botaoQ3')
+		marcarBotaoReyna.className += " marcarBotao"
+
+
 		let recuperar = document.getElementById('skillRazeQ')
 		recuperar.style.display = "contents"
-
 		let recuperar2 = document.getElementById('skillSageQ')
 		recuperar2.style.display = "contents"
-
 		let recuperar3 = document.getElementById('skillReynaQ')
 		recuperar3.style.display = "contents"
 
@@ -123,26 +122,32 @@ function legendaSkill(value){
 		esconderC3.style.display = "none"
 		esconderE3.style.display = "none"
 		esconderX3.style.display = "none"
+
 	} else if (value != 'q') {
-		let marcarBotao = document.getElementById('botaoQ')
-			marcarBotao.className -= " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoQ')
+			marcarBotaoRaze.className -= " marcarBotao"
+
+		let marcarBotaoSage = document.getElementById('botaoQ2')
+			marcarBotaoSage.className -= " marcarBotao"	
+
+		let marcarBotaoReyna = document.getElementById('botaoQ3')
+			marcarBotaoReyna.className -= " marcarBotao"		
 	}
-
-
-
 
 
 	if (value === 'c') {
 
-		let marcarBotao = document.getElementById('botaoC')
-		marcarBotao.className += " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoC')
+		marcarBotaoRaze.className += " marcarBotao"
+		let marcarBotaoSage = document.getElementById('botaoC2')
+		marcarBotaoSage.className += " marcarBotao"
+		let marcarBotaoReyna = document.getElementById('botaoC3')
+		marcarBotaoReyna.className += " marcarBotao"
 
 		let recuperar = document.getElementById('skillRazeC')
 		recuperar.style.display = "contents"
-
 		let recuperar2 = document.getElementById('skillSageC')
 		recuperar2.style.display = "contents"
-
 		let recuperar3 = document.getElementById('skillReynaC')
 		recuperar3.style.display = "contents"
 
@@ -169,25 +174,34 @@ function legendaSkill(value){
 		esconderQ3.style.display = "none"
 		esconderE3.style.display = "none"
 		esconderX3.style.display = "none"
+
 	} else if (value != 'c') {
-		let marcarBotao = document.getElementById('botaoC')
-			marcarBotao.className -= " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoC')
+			marcarBotaoRaze.className -= " marcarBotao"
+
+		let marcarBotaoSage = document.getElementById('botaoC2')
+			marcarBotaoSage.className -= " marcarBotao"
+
+		let marcarBotaoReyna = document.getElementById('botaoC3')
+			marcarBotaoReyna.className -= " marcarBotao"
 	}
 
 
 
 	if (value === 'e') {
 
-		let marcarBotao = document.getElementById('botaoE')
-		marcarBotao.className += " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoE')
+		marcarBotaoRaze.className += " marcarBotao"
+		let marcarBotaoSage = document.getElementById('botaoE2')
+		marcarBotaoSage.className += " marcarBotao"
+		let marcarBotaoReyna = document.getElementById('botaoE3')
+		marcarBotaoReyna.className += " marcarBotao"
 
 
 		let recuperar = document.getElementById('skillRazeE')
 		recuperar.style.display = "contents"
-
 		let recuperar2 = document.getElementById('skillSageE')
 		recuperar2.style.display = "contents"
-
 		let recuperar3 = document.getElementById('skillReynaE')
 		recuperar3.style.display = "contents"
 
@@ -216,23 +230,32 @@ function legendaSkill(value){
 		esconderX3.style.display = "none"
 
 	} else if (value != 'e') {
-		let marcarBotao = document.getElementById('botaoE')
-			marcarBotao.className -= " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoE')
+			marcarBotaoRaze.className -= " marcarBotao"
+
+		let marcarBotaoSage = document.getElementById('botaoE2')
+			marcarBotaoSage.className -= " marcarBotao"
+
+		let marcarBotaoReyna = document.getElementById('botaoE3')
+			marcarBotaoReyna.className -= " marcarBotao"
 	}
 
 
 
 	if (value === 'x') {
 
-		let marcarBotao = document.getElementById('botaoX')
-		marcarBotao.className += " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoX')
+		marcarBotaoRaze.className += " marcarBotao"
+		let marcarBotaoSage = document.getElementById('botaoX2')
+		marcarBotaoSage.className += " marcarBotao"
+		let marcarBotaoReyna = document.getElementById('botaoX3')
+		marcarBotaoReyna.className += " marcarBotao"
+
 
 		let recuperar = document.getElementById('skillRazeX')
 		recuperar.style.display = "contents"
-
 		let recuperar2 = document.getElementById('skillSageX')
 		recuperar2.style.display = "contents"
-
 		let recuperar3 = document.getElementById('skillReynaX')
 		recuperar3.style.display = "contents"
 
@@ -259,13 +282,20 @@ function legendaSkill(value){
 		esconderQ3.style.display = "none"
 		esconderE3.style.display = "none"
 		esconderC3.style.display = "none"
+
+
 	}  else if (value != 'x') {
-		let marcarBotao = document.getElementById('botaoX')
-			marcarBotao.className -= " marcarBotao"
+		let marcarBotaoRaze = document.getElementById('botaoX')
+			marcarBotaoRaze.className -= " marcarBotao"
+
+		let marcarBotaoSage = document.getElementById('botaoX2')
+			marcarBotaoSage.className -= " marcarBotao"
+
+		let marcarBotaoReyna = document.getElementById('botaoX3')
+			marcarBotaoReyna.className -= " marcarBotao"		
 	}
 
 }
-
 
  // alert('!!!Atualização!!! Foi inserido o Layout do Agente: Raze. Seguindo as opções:  Agentes>Raze.')
 

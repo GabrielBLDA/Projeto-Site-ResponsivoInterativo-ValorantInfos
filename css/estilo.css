@@ -122,7 +122,9 @@ img#faca {
 
 
 
-
+img.poderes{
+	cursor: pointer;
+}
 
 section#agentes_personagens span.marcarBotao {
 	color: black;
@@ -144,6 +146,7 @@ section#agentes_personagens span {
 	text-transform: uppercase;
 	box-shadow: 0px -3px 0px #ff4b00;
 	cursor: pointer;
+	transition: box-shadow 1s;
 }
 
 section#agentes_personagens span:hover {

@@ -120,15 +120,19 @@ img#faca {
 }
 
 
-div span.botaoModal{
-	background: #ff5152;
-	color:white;
-	font-size: 18px;
-	border: none;
-	border-radius: 15px;
+
+
+
+
+section#agentes_personagens span.marcarBotao {
+	color: black;
+	background:   #ff5152;
+	box-shadow: 0px 3px 0px #ffffff;
+	top: 30000px;
 }
 
-section#raze span#remover{
+
+section#agentes_personagens span {
 	color: black;
 	background: white;
 	display: block;
@@ -139,24 +143,10 @@ section#raze span#remover{
 	margin-bottom: 5px;
 	text-transform: uppercase;
 	box-shadow: 0px -3px 0px #ff4b00;
-	opacity: x
-
+	cursor: pointer;
 }
 
-section#raze span {
-	color: black;
-	background: white;
-	display: block;
-	width: 35px;
-	padding: 5px;
-	border-radius: 10px;
-	text-align: center;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-	box-shadow: 0px -3px 0px #ff4b00;
-}
-
-section#raze span:hover {
+section#agentes_personagens span:hover {
 	color: black;
 	background:   #ff5152;
 	box-shadow: 0px 3px 0px #ffffff;

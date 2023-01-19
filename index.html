@@ -55,75 +55,209 @@
 	</header><!-- /FIM CABEÇALHO -->
 
 		
-		<section style=" margin: 10000px; display: none;"   id="raze"> <!-- INICIO Sessão Agente: Raze -->
-			<div class="container" >
-				<div class="row">
-					<div class="col-md-6">
+		<section style=" margin: 10000px; display: none;"   id="agentes_personagens"> <!-- INICIO Sessão Agentes-->
+			<div class="container"> <!-- Inicio Container geral dos agentes-->
 
-						<div class="row">
-							<div class="col-md-12 ">
-								<div class="justify-content-center">
-									
-									<h1 style="color: white;" id="tituloRaze">RAZE SKILLS</h1>
-								</div>		
+				<div id="agente_raze" style="display: none;"><!-- INICIO Sessão Agentes RAZE-->
+					<div class="row">
+						<div class="col-md-6">
+
+							<div class="row">
+								<div class="col-md-12 ">
+									<div class="justify-content-center">	
+										<h1 style="color: white;" id="tituloRaze">RAZE SKILLS</h1>
+									</div>		
+								</div>
 							</div>
-						</div>
-	
-						<div class="container">
-							<div class="row mt-5">
+		
+							<div class="container">
+								<div class="row mt-5">
+									<div class="col-md-3 col-sm-12" align="center"  onclick="legendaSkill('q')">
+										<span class="btn" id="botaoQ">q</span>
+										<img src="imagens/skill-raze-1.png" width="90" >
+									</div>
 
-								<div class="col-md-3 col-sm-12" align="center">
-									<span class="btn"  onclick="legendaSkill('q')">q</span>
-									<img src="imagens/skill-raze-1.png" width="90" >
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('c')">
+										<span class="btn" id="botaoC">C</span>
+										<img src="imagens/skill-raze-3.png" width="90" >
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('e')">
+										<span class="btn" id="botaoE">E</span>
+										<img src="imagens/skill-raze-2.png" width="90">
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('x')">
+										<span class="btn" id="botaoX">X</span>
+										<img src="imagens/skill-raze-4.png" width="90">
+									</div>
 								</div>
 
-								<div class="col-md-3 col-sm-12" align="center">
-									<span class="btn"  onclick="legendaSkill('c')">C</span>
-									<img src="imagens/skill-raze-3.png" width="90" >
-								</div>
-
-								<div class="col-md-3 col-sm-12" align="center">
-									<span class="btn"  onclick="legendaSkill('e')">E</span>
-									<img src="imagens/skill-raze-2.png" width="90">
-								</div>
-
-								<div class="col-md-3 col-sm-12" align="center">
-									<span class="btn"   onclick="legendaSkill('x')" id="ult">X</span>
-									<img src="imagens/skill-raze-4.png" width="90">
-								</div>
-
-							</div>
-
-							<div class="row mt-4">
-								<div class="col">
-									<div class="caixa-Skills" id="CAIXAS">
-										<div class="conteudo-Skill" id="skillRazeQ" style="display: none">
-											<h1>Q - CARGA DE EXPLOSIVOS</h1>
-											<p class="mt-5">‎ ‎ ‎ INSTANTANEAMENTE joga uma Carga de Explosivos que gruda em superfícies. REUSE a habilidade depois de instalar para detonar, causando dano e movendo tudo que for atingido. Raze não sofre dano ao ser atingida pelo efeito desta habilidade, mas ainda pode sofrer dano de queda se for arremessada para longe.</p>
-										</div>
-										<div class="conteudo-Skill" id="skillRazeE"  style="display: none">
-											<h1>E - CARTUCHOS DE TINTA</h1>
-											<p class="mt-5">‎ ‎ ‎ ‎ EQUIPE uma granada múltipla. DISPARE para jogar a granada, que causa dano e cria submunições, cada uma causando dano a qualquer um que estiver no alcance.</p>
-										</div>
-										<div class="conteudo-Skill" id="skillRazeC"  style="display: none">
-											<h1>C - BUMBA</h1>
-											<p class="mt-5">‎ ‎ ‎ EQUIPE um Bumba. DISPARE para lançar o robô, que avança em linha reta no chão, ricocheteando nas paredes. O Bumba trava ao detectar inimigos no cone frontal e os persegue, explodindo e causando muito dano se alcançá-los.</p>
-										</div>
-										<div class="conteudo-Skill" id="skillRazeX"  style="display: none"> 
-											<h1>X - CARGA DE EXPLOSIVOS</h1>
-											<p class="mt-5">‎ ‎ ‎ ‎EQUIPE um lança-mísseis. DISPARE um foguete que causa dano devastador em área ao fazer contato com qualquer coisa.</p>
+								<div class="row mt-4">
+									<div class="col">
+										<div class="caixa-Skills" id="CAIXAS">
+											<div class="conteudo-Skill" id="skillRazeQ" style="display: none">
+												<h1>Q - CARGA DE EXPLOSIVOS</h1>
+												<p class="mt-5">‎ ‎ ‎ INSTANTANEAMENTE joga uma Carga de Explosivos que gruda em superfícies. REUSE a habilidade depois de instalar para detonar, causando dano e movendo tudo que for atingido. Raze não sofre dano ao ser atingida pelo efeito desta habilidade, mas ainda pode sofrer dano de queda se for arremessada para longe.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillRazeE"  style="display: none">
+												<h1>E - CARTUCHOS DE TINTA</h1>
+												<p class="mt-5">‎ ‎ ‎ ‎ EQUIPE uma granada múltipla. DISPARE para jogar a granada, que causa dano e cria submunições, cada uma causando dano a qualquer um que estiver no alcance.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillRazeC"  style="display: none">
+												<h1>C - BUMBA</h1>
+												<p class="mt-5">‎ ‎ ‎ EQUIPE um Bumba. DISPARE para lançar o robô, que avança em linha reta no chão, ricocheteando nas paredes. O Bumba trava ao detectar inimigos no cone frontal e os persegue, explodindo e causando muito dano se alcançá-los.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillRazeX"  style="display: none"> 
+												<h1>X - CARGA DE EXPLOSIVOS</h1>
+												<p class="mt-5">‎ ‎ ‎ ‎EQUIPE um lança-mísseis. DISPARE um foguete que causa dano devastador em área ao fazer contato com qualquer coisa.</p>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
+							</div>	
+						</div>
+						<div class="col-md-6 d-none d-md-block">
+							<img src="imagens/raze.png" class="img-fluid" width="420" style="float: left; opacity: 0.8">
 						</div>	
-					</div>
-					<div class="col-md-6 d-none d-md-block">
-						<img src="imagens/raze.png" class="img-fluid" width="420" style="float: left; opacity: 0.8">
 					</div>	
-				</div>		
-			</div>	
-		</section> <!-- Fim Sessão Agente: Raze -->
+				</div>	<!-- Fim Sessão Agente: Raze -->
+
+
+
+				<div id="agente_sage" style="display: none;"><!-- INICIO Sessão Agentes Sage-->
+					<div class="row">
+						<div class="col-md-6">
+
+							<div class="row">
+								<div class="col-md-12 ">
+									<div class="justify-content-center">	
+										<h1 style="color: white;" id="tituloRaze">Sage SKILLS</h1>
+									</div>		
+								</div>
+							</div>
+		
+							<div class="container">
+								<div class="row mt-5">
+									<div class="col-md-3 col-sm-12" align="center"  onclick="legendaSkill('q')">
+										<span class="btn">q</span>
+										<img src="imagens/sage-skill-q.png" width="90" >
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('c')">
+										<span class="btn">C</span>
+										<img src="imagens/sage-skill-c.png" width="90" >
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('e')">
+										<span class="btn">E</span>
+										<img src="imagens/sage-skill-e.png" width="90">
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('x')">
+										<span class="btn" id="ult">X</span>
+										<img src="imagens/sage-skill-x.png" width="90">
+									</div>
+								</div>
+
+								<div class="row mt-4">
+									<div class="col">
+										<div class="caixa-Skills" id="CAIXAS">
+											<div class="conteudo-Skill" id="skillSageQ" style="display: none">
+												<h1>Q - ORBE DE LENTIDÃO</h1>
+												<p class="mt-5">‎ ‎ ‎ EQUIPE um orbe de lentidão. DISPARE para lançá-lo. O orbe detona ao pousar, criando um campo duradouro que desacelera os jogadores dentro dele.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillSageE"  style="display: none">
+												<h1>E - ORBE CURATIVO</h1>
+												<p class="mt-5">‎ ‎ ‎ ‎ EQUIPE um orbe curativo. DISPARE com a mira sobre um aliado ferido para ativar uma cura ao longo do tempo. Use o DISPARO ALTERNATIVO enquanto Sage estiver ferida para ativar uma autocura ao longo do tempo.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillSageC"  style="display: none">
+												<h1>C - ORBE DE BARREIRA</h1>
+												<p class="mt-5">‎ ‎ ‎EQUIPE um orbe de barreira. DISPARE para posicionar uma parede sólida. DISPARO ALTERNATIVO gira o marcador de alvo.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillSageX"  style="display: none"> 
+												<h1>X - RESSURREIÇÃO</h1>
+												<p class="mt-5">‎ ‎ ‎ ‎EQUIPE uma habilidade de ressurreição. DISPARE com a mira sobre um aliado morto para começar a revivê-lo. Depois de uma breve canalização, o aliado voltará com a Vida completa</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-6 d-none d-md-block">
+							<img src="imagens/sage_agente.png" class="img-fluid" width="380" style="float: left; opacity: 0.8">
+						</div>	
+					</div>	
+				</div>	<!-- Fim Sessão Agente: Sage -->	
+
+
+				<div id="agente_reyna" style="display: none;"><!-- INICIO Sessão Agentes Reyna-->
+					<div class="row">
+						<div class="col-md-6">
+
+							<div class="row">
+								<div class="col-md-12 ">
+									<div class="justify-content-center">	
+										<h1 style="color: white;" id="tituloRaze">Reyna SKILLS</h1>
+									</div>		
+								</div>
+							</div>
+		
+							<div class="container">
+								<div class="row mt-5">
+									<div class="col-md-3 col-sm-12" align="center"  onclick="legendaSkill('q')">
+										<span class="btn">q</span>
+										<img src="imagens/reyna-skill-q.png" width="90" >
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('c')">
+										<span class="btn">C</span>
+										<img src="imagens/reyna-skill-c.png" width="90" >
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('e')">
+										<span class="btn">E</span>
+										<img src="imagens/reyna-skill-e.png" width="90">
+									</div>
+
+									<div class="col-md-3 col-sm-12" align="center" onclick="legendaSkill('x')">
+										<span class="btn" id="ult">X</span>
+										<img src="imagens/reyna-skill-x.png" width="90">
+									</div>
+								</div>
+
+								<div class="row mt-4">
+									<div class="col">
+										<div class="caixa-Skills" id="CAIXAS">
+											<div class="conteudo-Skill" id="skillReynaQ" style="display: none">
+												<h1>Q - DEVORAR</h1>
+												<p class="mt-5">‎ ‎ ‎ Inimigos abatidos por Reyna deixam Orbes de Alma que duram 3s. INSTANTANEAMENTE consome um Orbe de Alma próximo, curando-se de forma rápida por um curto período. A quantidade de Vida concedida por esta habilidade que ultrapassar 100 decairá ao longo do tempo. Se a habilidade IMPERATRIZ estiver ativa, esta habilidade será conjurada automaticamente e não consumirá o orbe.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillReynaE"  style="display: none">
+												<h1>E - DISPENSAR</h1>
+												<p class="mt-5">‎ ‎ ‎ ‎ INSTANTANEAMENTE consome um Orbe de Alma próximo, ficando inatingível por um curto período. Também se torna invisível se a habilidade IMPERATRIZ estiver ativa.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillReynaC"  style="display: none">
+												<h1>C - OLHAR VORAZ</h1>
+												<p class="mt-5">‎ ‎ ‎EQUIPE um olho etéreo e destrutível. ATIVE para lançá-lo adiante a uma curta distância. O olho deixará com visão turva todos os inimigos que olharem para ele.</p>
+											</div>
+											<div class="conteudo-Skill" id="skillReynaX"  style="display: none"> 
+												<h1>X - IMPERATRIZ</h1>
+												<p class="mt-5">‎ ‎ ‎ ‎INSTANTANEAMENTE entra em estado de frenesi, aumentando de forma drástica as velocidades de disparo, equipamento e recarga de munição. Renova a duração ao fazer um abate.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-6 d-none d-md-block">
+							<img src="imagens/reyna.png" class="img-fluid" width="380" style="float: left; opacity: 0.8">
+						</div>	
+					</div>	
+				</div>	<!-- Fim Sessão Agente: Reyna -->	
+
+			</div>	<!-- Fim Container -->
+		</section> <!-- Fim Sessão Agentes -->
 
 		<center>
 			<section id="home" class="mt-5"> <!-- inicio seção Menu interativo -->
@@ -193,21 +327,21 @@
 									<div class="col-md-6">
 										<div class="cubo">
 											<img src="imagens/sage.png" class="img-fluid">
-											<span class="btn btn-danger mt-1 " onclick="aviso()">SAGE</span>
+											<span class="btn btn-danger mt-1" onclick="agente('sage')">SAGE</span>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="cubo">
-											<img src="imagens/skill-raze-3.png" class="img-fluid mt-4">
-											<span class="btn btn-danger mt-3" onclick="agente('raze')">RAZE</span>
+											<img src="imagens/skill-raze-3.png" class="img-fluid" style="margin-bottom: 26px; margin-top: 32px;">
+											<span class="btn btn-danger" onclick="agente('raze')">RAZE</span>
 										</div>
 									</div>
 								</div>
 								<div class="row mt-5">
 									<div class="col-md-6 mt-2">
 										<div class="cubo">
-											<img src="imagens/reyna.png" class="img-fluid">
-											<span class="btn btn-danger mt-1" onclick="aviso()">REYNA</span>
+											<img src="imagens/reyna-skill-c.png" class="img-fluid" style="margin-top: 36px;">
+											<span class="btn btn-danger"  style="margin-top: 25px;" onclick="agente('reyna')">REYNA</span>
 										</div>
 									</div>
 									<div class="col-md-6 mt-2">

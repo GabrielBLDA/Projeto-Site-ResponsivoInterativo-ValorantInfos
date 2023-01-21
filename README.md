@@ -1,7 +1,5 @@
 
 # (Em desenvolvimento) 
-- Trata-se de um pequeno projeto pessoal (sem lucros). onde acabo testando meus estudos recentes sobre (Javascript, ES6, HTML5, CSS3, etc.), tudo em um só projeto.
-# Versão 1.3
 # <div align="center"> HUD AGENTES  </div>
 ![Capturar](https://user-images.githubusercontent.com/86329011/212584586-168f3ec3-1471-4ab7-a5dc-249b0442a490.PNG)
 ![Capturar](https://user-images.githubusercontent.com/86329011/212584732-76a13bd9-2c49-4097-96d2-5647b238ddca.PNG)

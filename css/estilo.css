@@ -202,6 +202,11 @@ section#raze img {
 	margin-top: 2em;
 }
 
+span.btn.btn-danger.mt-4{
+	margin-bottom: 500px;
+	margin-top: 500px;
+}
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
